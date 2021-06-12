@@ -1,0 +1,265 @@
+ /var/lib/jenkins/workspace/pipe-test1/target/my-app-1.0-SNAPSHOT.jar
+bitbucket: mail/Jeka_0621
+artifactory: admin/Jeka_0621
+Jenkins: admin/Admin11!   jenkins/123456
+tomcat: admin/admin11; tomcat/Unix11!
+ubuntu:123456
+
+1. New Jenkins pipeline (in Git) 
+2. Ansible : 
+  2.1 load jar from Artifactory
+  2.2 Copy to another user where installed tomcat 
+  3.3 Shutdown tomcat and startup
+
+   mydomain/bin
+           lib/
+           script/
+             startup.sh
+             shutdown.sh
+           log
+           conf
+           webapps/hello/lib/hello.jar
+
+
+single jar
+bandit2@bandit:~$ cat ./-
+bandit3@bandit:~$ ls -artl inhere/
+bandit4@bandit:~/inhere$ file ./-*
+bandit5@bandit:~/inhere$ find . -size  1033c
+bandit5@bandit:~/inhere$ file ./maybehere07/.file2
+bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
+bandit5@bandit:~/inhere$ find . -type f | xargs ls -artl | grep 1033
+bandit6@bandit:~$ find / -type f -size 33c| xargs ls -artl| grep bandit7| grep bandit6
+bandit6@bandit:~$ find / -type f -user bandit7 -group bandit6 -size 33c| xargs ls -artl
+bandit7@bandit:~$ grep millionth data.txt
+bandit8@bandit:~$ sort data.txt |uniq -u
+bandit9@bandit:~$ strings data.txt | grep "========"
+bandit10@bandit:~$ cat data.txt
+bandit10@bandit:~$ man base64
+bandit10@bandit:~$ base64 -d data.txt
+bandit11@bandit:~$ cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+bandit12 :
+bandit12@bandit:/tmp/vika123$ history
+    1  ls -artl
+    2  cd /tmp
+    3  ll
+    4  ls -artl
+    5  ls
+    6  mkdir mydir123
+    7  mkdir vika123
+    8  cd vika123
+    9  ls -artl
+   10  cp ~bandit12/data.txt .
+   11  ls -artl
+   12  xxd -r data.txt data
+   13  file data
+   14  mv data data.gzip
+   15  file data.gzip
+   16  mv data.gzip data.gz
+   17  file data.gzip
+   18  file data.gz
+   19  gzip -d data.gz
+   20  ls -artl
+   21  cat data.txt
+   22  file data.txt
+   23  file data
+   24  mv data data.bz2
+   25  bzip2 -d data.bz2
+   26  ls -artl
+   27  file data
+   28  mv data data.gz
+   29  gzip -d data.gz
+   30  ls -artl
+   31  file data
+   32  mv data data.tar
+   33  tar xvf data.tar
+   34  ls -artl
+   35  file data5.bin
+   36  mv data5.bin data5.tar
+   37  tar xvf data5.tar
+   38  ls -artl
+   39  file data6.bin
+   40  ls -artl
+   41  mv data6.bin data6.bz2
+   42  bzip2 -d data6.bz2
+   43  ls -artl
+   44  file data6
+   45  mv data6 data6.tar
+   46  tar -xvf data6.tar
+   47  ls -artl
+   48  file data8.bin
+   49  mv data8.bin data8.gz
+   50  gzip -d data8.gz
+   51  ls -artl
+   52  file data8
+   53  cat data8
+   54  history
+bandit12@bandit:/tmp/vika123$
+
+bandit13@bandit:~$ ls -artl
+total 24
+-rw-r--r--  1 root     root      675 May 15  2017 .profile
+-rw-r--r--  1 root     root     3526 May 15  2017 .bashrc
+-rw-r--r--  1 root     root      220 May 15  2017 .bash_logout
+-rw-r-----  1 bandit14 bandit13 1679 May  7  2020 sshkey.private
+drwxr-xr-x  2 root     root     4096 May  7  2020 .
+drwxr-xr-x 41 root     root     4096 May  7  2020 ..
+bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost
+
+bandit14@bandit:~$  cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+bandit14@bandit:~$ nc localhost 30000
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+Correct!
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+bandit14@bandit:~$ ssh bandit15@localhost
+
+
+bandit15@bandit:~$ openssl s_client -connect localhost:30001
+CONNECTED(00000003)
+depth=0 CN = localhost
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 CN = localhost
+verify return:1
+---
+Certificate chain
+ 0 s:/CN=localhost
+   i:/CN=localhost
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICBjCCAW+gAwIBAgIEfftLGTANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjEwNDEzMDgzODA3WhcNMjIwNDEzMDgzODA3WjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMLfXBVa
+jVKDHlA3U+S0hBMJMJlfue3xKECpmx1Ajp4/khUuWwvPB7+wLjqasBO2WfFYJzcq
+z9t7FfAPIlYjgvOTQs5X4vQ1aGzanvnNn+1VknpOnFAJQBSFq6ZD3ipWrhwm9XZq
+8CgFhTGp9IPthZp8Y0B7OgobhlMtXD/zLaTbAgMBAAGjZTBjMBQGA1UdEQQNMAuC
+CWxvY2FsaG9zdDBLBglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0
+ZWQgYnkgTmNhdC4gU2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3
+DQEBBQUAA4GBAMFH9rsZovwnb5k71/MpyCnXEwGlIhixUu6qfi1kiFvhJ6lJCvaO
+weOYxV4oJy1OEB0LSEAQOnSPfzC8dDasijFcdVhuIGGPuQ2GZ05nCiiIZUNnrMRB
+0z2RuRxgxMVjOvcSIJyvwyjVH4jY4I434fMyldePLxO1POLd1cxoKNTO
+-----END CERTIFICATE-----
+subject=/CN=localhost
+issuer=/CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1019 bytes and written 269 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: 871A773DBD42C8CE3AD71CA22A6BF45AB75D0657A5740613EA9A410D68207004
+    Session-ID-ctx:
+    Master-Key: EB56951DF10198490236A5775D09CFF19653EDDA03004B0C9DA7B900F37333CDBD0DA81CC79D4719C912200DBB092E6D
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - f2 5b 83 7e f0 ca 58 ca-aa f3 8f 83 b9 65 d5 23   .[.~..X......e.#
+    0010 - 25 3a 3a 55 b2 94 f8 4c-a1 d9 5e d8 c4 03 a4 9a   %::U...L..^.....
+    0020 - fc 3b 5b ff 02 fe bd 1c-e9 79 46 d3 0a 1d 59 d1   .;[......yF...Y.
+    0030 - a1 0a d8 e4 11 fe ef 9f-dc c9 1f a9 fb 21 8d ca   .............!..
+    0040 - 65 e8 e0 5d 48 de 05 29-8b 4e 42 81 2a 74 57 24   e..]H..).NB.*tW$
+    0050 - da 5a 95 73 ee 3b 84 69-6f 49 27 00 6b bf a8 05   .Z.s.;.ioI'.k...
+    0060 - 33 9c aa 6f 4f 5b 50 60-e9 56 8a f7 7b 6d 76 ea   3..oO[P`.V..{mv.
+    0070 - 5a f2 8b a8 30 4a ef 1d-f5 a3 e6 b8 9a 60 3e 6c   Z...0J.......`>l
+    0080 - c8 a0 11 31 ef 1d 63 e9-54 c2 4e 61 c7 e9 44 21   ...1..c.T.Na..D!
+    0090 - f3 64 7b 58 e7 8f ce 25-cf f5 aa 65 fb bd c6 2e   .d{X...%...e....
+
+    Start Time: 1623234176
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: yes
+---
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+Correct!
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+closed
+bandit15@bandit:~$
+
+bandit16@bandit:~$ nmap -sV -p31000-32000 localhost
+bandit16@bandit:~$ nmap -sV -p31000-32000 localhost
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2019-01-01 12:31 CET          VIka: press CTRL+C
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00019s latency).
+Not shown: 999 closed ports
+PORT      STATE SERVICE     VERSION
+31518/tcp open  ssl/echo
+31790/tcp open  ssl/unknown
+
+...
+bandit16@bandit:~$ openssl s_client -connect localhost:31790
+CONNECTED(00000003)
+depth=0 CN = localhost
+[...]
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+    Extended master secret: yes
+---
+cluFn7wTiGryunymYOu4RcffSxQluehd
+Correct!
+-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+-----END RSA PRIVATE KEY-----
+
+closed
+bandit16@bandit:~$
+bandit16@bandit:/tmp/vika_tmp$ history
+    4  cd /tmp
+    6  mkdir vika_tmp
+    7  cd vika_tmp
+    8  ls -artl
+    9  touch bandit17.key
+   10  vi bandit17.key
+   11  ls -artl
+   12  touch t1.txt
+   13  ls -artl
+   14  chmod 400 t1.txt
+   15  ls -artl
+   16  chmod 755 t1.txt
+   17  ls -artl
+   18  ssh -i bandit17.key bandit17@localhost
+   19  chmod 400 bandit17.key
+   20  ssh -i bandit17.key bandit17@localhost
+   21  history
+
