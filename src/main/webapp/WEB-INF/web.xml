@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>hello</servlet-name>
-        <servlet-class>com.geekcap.vmturbo.HelloWorldServlet</servlet-class>
+        <servlet-class>examples.HelloWorldServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
