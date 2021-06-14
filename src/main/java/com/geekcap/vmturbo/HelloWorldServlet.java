@@ -48,7 +48,7 @@ public final class HelloWorldServlet extends HttpServlet {
         writer.println("</table>");
 
         writer.println("This is the output of a servlet that is part of");
-        writer.println("the Hello, Yasha :).");
+        writer.println("the Hello, Stella :).");
 
         writer.println("</body>");
         writer.println("</html>");
